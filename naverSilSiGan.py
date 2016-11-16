@@ -74,7 +74,7 @@ while True:
     # 실검 달성 횟수를 내림차순으로 출력하는 코드
     i = 1
     print("\n\n")
-    query = "SELECT * FROM naver ORDER BY no DESC LIMIT 10"
+    query = "SELECT * FROM naver ORDER BY no DESC LIMIT 20"
     for row in sqlite3.connect(dbname).cursor().execute(query).fetchall():
         print("현재 %d위 : %s                  (총 실검 달성 횟수 : %s)" % (i, row[0], row[1]))
         i += 1
