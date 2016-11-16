@@ -2,7 +2,7 @@
 from requests import *
 from bs4 import BeautifulSoup
 import sqlite3
-import time
+import time as sleep
 
 i = 0
 '''
@@ -78,6 +78,9 @@ while True:
     for row in sqlite3.connect(dbname).cursor().execute(query).fetchall():
         print("현재 %d위 : %s                  (총 실검 달성 횟수 : %s)" % (i, row[0], row[1]))
         i += 1
-    print("\n#### 10초 기다림 ####", end="")
+
+    timeMinute = time / 60
+    timeHour = timeMinute / 60
+    print("\n#### 10초 기다림 #### ( 현재 통계 사용 시간 : %d 시간 %d 분 %d 초 )" % (timeHour, timeMinute, time), end="")
     time += 10          # 사용시간 10초 추가!
-    time.sleep(10)
+    sleep.sleep(10)
