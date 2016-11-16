@@ -60,7 +60,7 @@ while True:
 
         elif len(row) > 0:     #DB에 값이 있을 때
             set = row[0][1] + 1
-            print(str(set))
+            #print(str(set))                # 디버깅 용도의 print()
             query = "UPDATE naver SET no=%d WHERE search LIKE '%s' " % (set, s)
             updateConn = sqlite3.connect(dbname)
             updateCursor = updateConn.cursor()
