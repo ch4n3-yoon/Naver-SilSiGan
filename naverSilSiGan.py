@@ -81,6 +81,6 @@ while True:
 
     timeMinute = time / 60
     timeHour = timeMinute / 60
-    print("\n#### 10초 기다림 #### ( 현재 통계 사용 시간 : %d 시간 %d 분 %d 초 )" % (timeHour, timeMinute, time), end="")
+    print("\n#### 10초 기다림 #### ( 현재 통계 사용 시간 : %d 시간 | %d 분 | %d 초 )" % (timeHour, timeMinute, time), end="")
     time += 10          # 사용시간 10초 추가!
     sleep.sleep(10)
