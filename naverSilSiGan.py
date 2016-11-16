@@ -12,6 +12,7 @@ i = 0
 '''
 
 dbname = "naverSilSiGan.db"     # 데이터를 저장할 DB 서버와 연결할 DB 네임 설정
+time = 0        # 몇 초 돌렸는지 확인하기 위해
 
 # 여기서 무한루프 실행
 while True:
@@ -78,4 +79,5 @@ while True:
         print("현재 %d위 : %s                  (총 실검 달성 횟수 : %s)" % (i, row[0], row[1]))
         i += 1
     print("\n#### 10초 기다림 ####", end="")
+    time += 10          # 사용시간 10초 추가!
     time.sleep(10)
