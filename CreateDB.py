@@ -1,4 +1,5 @@
-# -*- coding : UTF-8 -*-
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
 import sqlite3
 
 # DB 생성 및 sqlite3의 커넥트, 커서 객체 생성

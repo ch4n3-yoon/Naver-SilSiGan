@@ -1,4 +1,6 @@
-# -*- coding : UTF-8 -*-
+#!/usr/bin/python3
+# -*- coding: UTF-8 -*-
+
 from requests import *
 from bs4 import BeautifulSoup
 import sqlite3
@@ -11,7 +13,7 @@ i = 0
  2. 실검 달성 횟수를 출력할 때 쓰임.
 '''
 
-dbname = "naverSilSiGan.db"     # 데이터를 저장할 DB 서버와 연결할 DB 네임 설정
+dbname = "./naverSilSiGan.db"     # 데이터를 저장할 DB 서버와 연결할 DB 네임 설정
 time = 0        # 몇 초 돌렸는지 확인하기 위해
 
 # 여기서 무한루프 실행
